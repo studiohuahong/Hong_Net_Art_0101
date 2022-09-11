@@ -9,7 +9,7 @@
 
 body{
 color: black; 
-background-color: rgb(119, 150, 120);
+background-color: rgb(143, 174, 144);
 }
 
 h1 {
@@ -33,16 +33,16 @@ p {
     color: rgb(255, 192, 192);
     text-shadow: 5px 5px #000000;
     -webkit-text-stroke: 3px #000000; 
-    line-height: 100%;
-    margin-left: 100px;
-    margin-right: 100px;
+    line-height: 110%;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 a {
     font-family: 'Oi', cursive;
     font-size: 80px; 
     font-weight: 400;
-    color: rgb(255, 164, 164);
+    color: rgb(255, 147, 147);
     text-shadow: 5px 5px #0049c7;
     -webkit-text-stroke: 3px #0049c7; 
     text-decoration: none;
