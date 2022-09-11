@@ -5,7 +5,7 @@
 
 body{
 color: black; 
-background-color: whitesmoke;
+background-color: rgb(180, 180, 180);
 }
 
 h1 {
@@ -32,5 +32,5 @@ ul {
     display: inline-block;
     text-align: left;
     list-style-type: square;
-    
+    text-align: center;
 }
