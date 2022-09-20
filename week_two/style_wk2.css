@@ -9,9 +9,9 @@
 
 body{
 color: black; 
-/* background-color: rgb(143, 174, 144); */
-background: rgb(139,255,179);
-background: radial-gradient(circle, rgba(139,255,179,1) 0%, rgba(148,162,233,1) 100%);
+background-color: rgb(200, 200, 200);
+/* background: rgb(139,255,179);
+background: radial-gradient(circle, rgba(139,255,179,1) 0%, rgba(148,162,233,1) 100%); */
 }
 
 h1 {
@@ -53,6 +53,7 @@ a {
 
 a:hover {
     background-color: #7eadff;
+    
   }
 
 div.container {
