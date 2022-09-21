@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&display=swap");
-/* @import url('https://fonts.googleapis.com/css2?family=Monofett&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Ewert&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 body{
 color: rgb(255, 255, 255); 
@@ -9,25 +7,32 @@ background-image: url("./assets/images/Planet.png");
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-position: center;
-background-size: 65%;
-background-color: rgb(10, 10, 10);
+background-size: length;
+background-color: rgb(7, 7, 7);
 }
 
 h1 {
-    font-family: 'Ewert', cursive;
+    font-family: 'Press Start 2P', cursive;
     color: rgb(255, 255, 255);
-    font-size: 80px;
+    font-size: 60px;
     font-weight: 400;
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 80px;
+    /* margin-bottom: 80px; */
 }
 
 a {
     font-family: "Roboto Mono", monospace;
-    font-size: 20px; 
+    font-size: 25px; 
     color: rgb(255, 255, 255);
 }
+
+a:hover{
+    filter: blur(1px);
+    transition: 1s;
+    /* background-color: #00ffd0; */
+}
+
 
 div.container {
     text-align: center;
@@ -38,4 +43,11 @@ ul {
     text-align: left;
     list-style-type: square;
     text-align: left;
+}
+
+p {
+    font-family: "Roboto Mono", monospace;
+    font-size: 15px; 
+    color: rgb(255, 255, 255);
+    text-align: center;
 }
