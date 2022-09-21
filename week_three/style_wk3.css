@@ -1,13 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-body{
-    background-image: url("../assets/images/screw.jpg");
+/* body{
+    background-image: url("../assets/images/???.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
     background-color: rgb(10, 10, 10);
-}
+} */
+
+body {
+    background-image: radial-gradient(rgb(125, 125, 125) 20%, transparent 20%),
+       radial-gradient(rgb(125, 125, 125) 20%, transparent 20%);
+    background-color: rgb(240, 240, 240);
+    background-position: 0 0, 5px 5px;
+    background-size: 10px 10px;
+    height: 200px;
+    width: 100%;
+  }
 
 h1 {
     font-family: 'Merriweather', serif;
@@ -76,10 +86,21 @@ ul {
     background-color: #ffffff;
     padding: 20px;
     text-align: center;
+    box-shadow: 10px 10px 5px lightblue inset;
     
     -webkit-box-shadow: 0 10px 6px -6 rgb(60, 60, 60);
     -moz-box-shadow: 0 10px 6px -6px rgb(60, 60, 60);
     box-shadow: 0 10px 6px -6px rgb(60, 60, 60);
+
+    transition: transform .2s;
+    /* display: inline-block;
+    margin: 0 auto; */
+}
+
+.grid-item:hover{
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2); 
 }
 
 .center {
@@ -88,4 +109,16 @@ ul {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+
+.zoom {
+    transition: transform .2s;
+    display: inline-block;
+    margin: 0 auto;
+  }
+
+.zoom:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
 }
