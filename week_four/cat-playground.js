@@ -5,11 +5,12 @@ const staticCat = document.querySelector(".static.cat-container");
 const kittyFace = document.querySelector('.cat-face');
 const kittyTail = document.querySelector('.cat-tail');
 const kittyMessage = document.querySelector(".cat-speech-bubble");
-
+const textCollection = ["Hi, I am Jenga Jam!","Meow I want Salmon Can!","Zzzzzz...","Where is my ball?"];
+const faceCollection = ["o w o","^ w ^","@ ^ @","$ * $"];
 
 /* manipulating content, styles, classes of elements */
-kittyFace.innerHTML = "o w o";
-kittyMessage.innerText = "Hi, I am Jenga Jam!";
+//kittyFace.innerHTML = "o w o";
+//kittyMessage.innerText = "Hi, I am Jenga Jam!";
 kittyTail.style.backgroundColor = 'black'; //notice tail remains black
 // staticCat.classList.add("calico");
 
@@ -35,13 +36,23 @@ staticCat.addEventListener("click", function () {
   // pick a random screen position
   let randomX = rng(catBuffer, window.innerWidth - catBuffer);
   let randomY = rng(catBuffer, window.innerHeight - catBuffer);
-  console.log(randomX);
+  // console.log(randomX);
   this.style.left = `${randomX}px`;
   this.style.top = `${randomY}px`;
-});
 
+  let randomIndex = getRandomInt(4)
+  kittyMessage.innerText = textCollection[randomIndex];
+
+  let randomIndexFace = getRandomInt(4)
+  kittyFace.innerHTML = faceCollection[randomIndexFace]
+  // console.log(randomIndex);
+});
 
 /*** HELPER FUNCTIONS ***/
 function rng(min, max) {
   return Math.floor(Math.random() * (max - min) + min);
+}
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
 }

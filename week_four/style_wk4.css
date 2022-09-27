@@ -6,9 +6,39 @@ body {
   font-size: 1rem;
 }
 
+
+.ball-maker {
+  padding: 1rem;
+  /* height: calc(100vh - 2rem); */
+  position: relative;
+}
+
+.ball-container {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  background: rgb(74,185,255);
+  background: radial-gradient(circle, rgba(74,185,255,1) 36%, rgba(109,71,255,1) 100%);
+  border-radius: 50% 50% 50% 50%;
+}
+
+.ball-container.static {
+  position: relative;
+}
+
+.ball-mid {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  background: rgb(242, 0, 255);
+  border-radius: 50% 50% 50% 50%;
+  margin-top: 60px;
+  margin-left: 60px;
+}
+
 .kitty-maker {
   padding: 1rem;
-  height: calc(100vh - 2rem);
+  /* height: calc(100vh - 2rem); */
   position: relative;
 }
 
@@ -175,6 +205,9 @@ body {
 .calico .paw-2 {
   background: orange;
 }
+
+
+
 
 /* tail animation styles */
 .aggro .cat-tail {
