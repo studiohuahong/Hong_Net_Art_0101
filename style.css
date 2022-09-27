@@ -3,21 +3,22 @@
 
 body{
 color: rgb(255, 255, 255); 
-background-image: url("./assets/images/Planet.png");
+background-image: url("./assets/images/hong.png");
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-position: center;
 background-size: length;
-background-color: rgb(7, 7, 7);
+background-color: rgb(70, 70, 70);
 }
 
 h1 {
     font-family: 'Press Start 2P', cursive;
-    color: rgb(255, 255, 255);
+    color: rgb(120, 120, 120);
     font-size: 60px;
     font-weight: 400;
     text-align: center;
     margin-top: 80px;
+    text-shadow: 4px 4px rgb(255, 255, 255);
     /* margin-bottom: 80px; */
 }
 
@@ -25,6 +26,7 @@ a {
     font-family: "Roboto Mono", monospace;
     font-size: 25px; 
     color: rgb(255, 255, 255);
+    /* text-shadow: 2px 2px rgb(120, 120, 120); */
 }
 
 a:hover{
