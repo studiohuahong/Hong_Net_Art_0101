@@ -5,8 +5,10 @@ const staticCat = document.querySelector(".static.cat-container");
 const kittyFace = document.querySelector('.cat-face');
 const kittyTail = document.querySelector('.cat-tail');
 const kittyMessage = document.querySelector(".cat-speech-bubble");
-const textCollection = ["Hi, I am Jenga Jam!","Meow I want Salmon Can!","Zzzzzz...","Where is my ball?"];
-const faceCollection = ["o w o","^ w ^","@ ^ @","$ * $"];
+const textCollection = ["Hi, I am Jenga Jam!","Meow I want Salmon Can!","Zzzzzz...","Where is my ball?","LASER!!!"];
+const faceCollection = ["o w o","^ w ^","@ ^ @","$ * $","* ^ *","! o !","- ^ -","# * #"];
+
+const staticBall = document.querySelector(".static.ball-container");
 
 /* manipulating content, styles, classes of elements */
 //kittyFace.innerHTML = "o w o";
@@ -40,11 +42,25 @@ staticCat.addEventListener("click", function () {
   this.style.left = `${randomX}px`;
   this.style.top = `${randomY}px`;
 
-  let randomIndex = getRandomInt(4)
+  let randomIndex = getRandomInt(5)
   kittyMessage.innerText = textCollection[randomIndex];
 
-  let randomIndexFace = getRandomInt(4)
+  let randomIndexFace = getRandomInt(8)
   kittyFace.innerHTML = faceCollection[randomIndexFace]
+  // console.log(randomIndex);
+});
+
+// onclick the cat moves elsewhere
+staticBall.addEventListener("click", function () {
+  //we're being lazy with a static buffer, could make it cat-sized
+  const ballBuffer = 200;
+  // pick a random screen position
+  let randomX = rng(ballBuffer, window.innerWidth - ballBuffer);
+  let randomY = rng(ballBuffer, window.innerHeight - ballBuffer);
+  // console.log(randomX);
+  this.style.left = `${randomX}px`;
+  this.style.top = `${randomY}px`;
+
   // console.log(randomIndex);
 });
 

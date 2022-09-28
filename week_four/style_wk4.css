@@ -6,34 +6,16 @@ body {
   font-size: 1rem;
 }
 
-
-.ball-maker {
-  padding: 1rem;
-  /* height: calc(100vh - 2rem); */
-  position: relative;
-}
-
 .ball-container {
   width: 200px;
   height: 200px;
+  background: rgb(255,0,0);
+  background: radial-gradient(circle, rgba(255,0,0,1) 11%, rgba(255,84,192,1) 17%, rgba(255,255,255,0) 21%);
   position: absolute;
-  background: rgb(74,185,255);
-  background: radial-gradient(circle, rgba(74,185,255,1) 36%, rgba(109,71,255,1) 100%);
-  border-radius: 50% 50% 50% 50%;
 }
 
-.ball-container.static {
+.bLL-container.static {
   position: relative;
-}
-
-.ball-mid {
-  width: 80px;
-  height: 80px;
-  position: absolute;
-  background: rgb(242, 0, 255);
-  border-radius: 50% 50% 50% 50%;
-  margin-top: 60px;
-  margin-left: 60px;
 }
 
 .kitty-maker {
@@ -179,14 +161,8 @@ body {
 }
 
 
-
-
-
-
-
-
 /* calico-cat styles */
-.calico .cat-body {
+/* .calico .cat-body {
   background: black;
 }
 
@@ -204,9 +180,7 @@ body {
 
 .calico .paw-2 {
   background: orange;
-}
-
-
+} */
 
 
 /* tail animation styles */
@@ -235,6 +209,11 @@ body {
   transition: top 1s, left 1s;
 }
 
+.ball-container {
+  top: 0;
+  left: 0;
+  transition: top 0.2s, left 0.2s;
+}
 
 
 
